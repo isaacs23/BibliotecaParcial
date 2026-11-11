@@ -37,6 +37,8 @@ Razón: Consideramos que no es indispensable saber el tipo de usuario, es sufici
    
       RF-08: El sistema debe generar reportes que identifiquen los recursos más solicitados y más utilizados.
 
+
+
       **// REQUISITOS NO FUNCIONALES:**
 
       RNF-01: El sistema debe tener una interfaz gráfica sencilla e intuitiva, permitiendo que los usuarios realicen préstamos, devoluciones y consultas de forma fácil y comprensible
