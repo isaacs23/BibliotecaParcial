@@ -3,7 +3,7 @@ Parcial Tercer Corte - Ingeniería de Software II
 
 Propuesta 5: Biblioteca o préstamo de recursos
 
-1. Alcance:
+**1. Alcance:**\n
 Dejaremos implementadas las siguientes funcionalidades:
   •	Varios tipos de recurso con reglas de préstamo diferentes (plazo, cantidad máxima, renovaciones).
   •	Cálculo de multas con políticas intercambiables.
