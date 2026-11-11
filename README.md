@@ -38,6 +38,7 @@ Razón: Consideramos que no es indispensable saber el tipo de usuario, es sufici
       RF-08: El sistema debe generar reportes que identifiquen los recursos más solicitados y más utilizados.
 
 
+
       **// REQUISITOS NO FUNCIONALES:**
 
 
