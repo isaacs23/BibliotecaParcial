@@ -1,4 +1,4 @@
-# BibliotecaParcial
+# Propuesta Biblioteca
 Parcial Tercer Corte - Ingeniería de Software II
 
 Propuesta 5: Biblioteca o préstamo de recursos
@@ -15,7 +15,10 @@ Dejaremos implementadas las siguientes funcionalidades:
 Sacaremos la siguiente funcionalidad:
   •	Varios tipos de usuario (estudiante, docente, externo) con privilegios distintos.
   
-Razón: Consideramos que no es indispensable saber el tipo de usuario, es suficiente con que haya un usuario que quiera sacar un recurso y ya
+Razón: Consideramos que tener varios tipos de usuarios agrega una capa de complejidad que no es necesaria, ya que a la larga limita el alcance del sistema, encasillándolo a solo una institución educativa y por la naturaleza misma de esos arquetipos (estudiante, docente y externo) se arrebata la posibilidad de aplicarlo a cualquier otro entorno, así que decidimos modificarlo por solo usuarios genéricos con mismos privilegios que puedan pedir prestamos y hacer uso de las demás funcionalidades y un usuario administrador que pueda gestionar el catálogo y demás funciones propias de un admin.
+
+Funcionalidad modificada:
+    6. Usuario genérico con acceso a las funcionalidades previamente descritas y un usuario administrador que gestione el catalogo y demás apartados del sistema
 
 2. Requisitos:
    
