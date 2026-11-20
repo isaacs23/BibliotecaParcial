@@ -20,7 +20,7 @@ Razón: Consideramos que tener varios tipos de usuarios agrega una capa de compl
 
 Funcionalidad modificada:
 
-  6. Usuario genérico con acceso a las funcionalidades previamente descritas y un usuario administrador que gestione el catalogo y demás apartados del sistema
+  6. Usuarios genéricos con acceso a las funcionalidades previamente descritas y un usuario administrador que gestione el catalogo y demás apartados del sistema
 
 
 ## 2. Requisitos:
