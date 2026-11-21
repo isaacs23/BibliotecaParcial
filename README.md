@@ -63,8 +63,8 @@ Funcionalidad modificada:
   
   RNF-08: El sistema debe garantizar que los cálculos de multas, fechas de vencimiento y períodos de préstamo se realicen correctamente, evitando errores en los valores presentados al usuario.
 
-**3.	Problemas de diseño:** 
-    Cálculo de multas rígido (Difícil de cambiar): Si el sistema usara una lista larga de condiciones ("si pasa esto, cobra aquello") para calcular las multas, habría que modificar y volver a probar el código principal cada vez que la biblioteca cambie sus tarifas. Con el patrón Strategy, cada forma de cobrar (tarifa fija, progresiva o con día de gracia) funciona como una ficha intercambiable: cuando un usuario entrega un libro con retraso, el administrador puede cambiar la regla de cobro en cualquier momento sin tocar el resto del programa.
+## 3.	Problemas de diseño:
+   Cálculo de multas rígido (Difícil de cambiar): Si el sistema usara una lista larga de condiciones ("si pasa esto, cobra aquello") para calcular las multas, habría que modificar y volver a probar el código principal cada vez que la biblioteca cambie sus tarifas. Con el patrón Strategy, cada forma de cobrar (tarifa fija, progresiva o con día de gracia) funciona como una ficha intercambiable: cuando un usuario entrega un libro con retraso, el administrador puede cambiar la regla de cobro en cualquier momento sin tocar el resto del programa.
     
   Reglas e inventario duplicados (Código repetido): Si la versión de consola y la ventana gráfica manejaran sus propias listas y validaciones por separado, habría que escribir las mismas reglas dos veces y el inventario se desincronizaría. Al usar Facade y Singleton, ambas pantallas se conectan a un único catálogo compartido y aplican exactamente los mismos controles, como impedir renovar un préstamo si alguien más espera ese ejemplar o prestar máximo un equipo tecnológico por persona.
     
@@ -72,9 +72,9 @@ Funcionalidad modificada:
     
   Avisos atados a la pantalla (Código rígido): Hacer que el inventario lance directamente ventanas emergentes o mensajes en consola cuando se devuelve un ejemplar ataría las reglas del negocio a la parte visual. Gracias al patrón Observer, cuando alguien devuelve el único portátil disponible, el sistema avisa automáticamente en orden de llegada al primer usuario de la lista de espera en su bandeja personal, sin importar qué interfaz esté abierta.
 
-**4.	Patrones de diseño elegidos:**
-       en los patrones de diseno seleccionamos 5
-    siendo el primero el factory method el cual se uso porque permite añadir nuevos tipos de recurso mediante nuevas subclases creadoras sin modificar el código existente, permitiendo cumplir el principio open/close pero como desventaja terminaremos con bastantes clases 
+## 4.	Patrones de diseño elegidos:
+   en los patrones de diseno seleccionamos 5
+   siendo el primero el factory method el cual se uso porque permite añadir nuevos tipos de recurso mediante nuevas subclases creadoras sin modificar el código existente, permitiendo cumplir el principio open/close pero como desventaja terminaremos con bastantes clases 
     
   tambien usaremos el patron strategy porque se descartó aplicar Template Method porque la política de sanción debe poder cambiarse  por el administrador sobre préstamos que ya están activos, lo cual sería inviable si el algoritmo estuviera fijado por herencia al momento de crear el préstamo.
     
@@ -82,4 +82,5 @@ Funcionalidad modificada:
     
   usamos los patrones singleton y facade, singleton para evitar inconsistencias en el stock y facade para la coordinacion entre clases
 
-** 5.	Arquitectura general:**   El sistema está estructurado bajo una arquitectura en capas desacopladas con núcleo único compartido, diseñada para que la interfaz por consola y la interfaz gráfica operen exactamente sobre las mismas reglas de negocio y el mismo estado en memoria sin duplicar código.
+## 5.	Arquitectura general:  
+El sistema está estructurado bajo una arquitectura en capas desacopladas con núcleo único compartido, diseñada para que la interfaz por consola y la interfaz gráfica operen exactamente sobre las mismas reglas de negocio y el mismo estado en memoria sin duplicar código.
