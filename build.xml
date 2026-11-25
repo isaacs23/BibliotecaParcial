@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BibliotecaRecursos" default="default" basedir=".">
+    <description>Proyecto Java para Apache NetBeans - Sistema de Biblioteca.</description>
+    <import file="nbproject/build-impl.xml"/>
+</project>
