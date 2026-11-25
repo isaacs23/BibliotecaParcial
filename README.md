@@ -16,7 +16,7 @@ Sacaremos la siguiente funcionalidad:
 
   6. Varios tipos de usuario (estudiante, docente, externo) con privilegios distintos.
   
-Razón: Consideramos que tener varios tipos de usuarios agrega una capa de complejidad que no es necesaria, ya que a la larga limita el alcance del sistema, encasillándolo a solo una institución educativa y por la naturaleza misma de esos arquetipos (estudiante, docente y externo) se arrebata la posibilidad de aplicarlo a cualquier otro entorno, así que decidimos modificarlo por solo usuarios genéricos con mismos privilegios que puedan pedir prestamos y hacer uso de las demás funcionalidades y un usuario administrador que pueda gestionar el catálogo y demás funciones propias de un admin.
+**Razón:** Consideramos que tener varios tipos de usuarios agrega una capa de complejidad que no es necesaria, ya que a la larga limita el alcance del sistema, encasillándolo a solo una institución educativa y por la naturaleza misma de esos arquetipos (estudiante, docente y externo) se arrebata la posibilidad de aplicarlo a cualquier otro entorno, así que decidimos modificarlo por solo usuarios genéricos con mismos privilegios que puedan pedir prestamos y hacer uso de las demás funcionalidades y un usuario administrador que pueda gestionar el catálogo y demás funciones propias de un admin.
 
 Funcionalidad modificada:
 
