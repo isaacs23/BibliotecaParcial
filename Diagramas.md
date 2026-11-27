@@ -1,5 +1,3 @@
-**1. Diagrama de Casos de Uso del Sistema**
-
 flowchart LR
     Usuario(["Usuario Normal"])
     Admin(["Administrador"])
