@@ -79,8 +79,17 @@ Funcionalidad modificada:
   tambien usaremos el patron strategy porque se descartó aplicar Template Method porque la política de sanción debe poder cambiarse  por el administrador sobre préstamos que ya están activos, lo cual sería inviable si el algoritmo estuviera fijado por herencia al momento de crear el préstamo.
     
    tambien usaremos el patron observer para que se pueda notificar automáticamente un cambio de estado a otros objetos interesados (los Observadores) sin necesidad de estar acoplado a ellos ni conocer sus detalles internos, lo que implica que Exige controlar explícitamente la estructura de suscripción como una cola (LinkedList) en lugar de una lista o conjunto genérico para garantizar la equidad FIFO lo cual queda perfecto ya que se debe tener un catalogo unico
-    
-  usamos los patrones singleton y facade, singleton para evitar inconsistencias en el stock y facade para la coordinacion entre clases
 
 ## 5.	Arquitectura general:  
 El sistema está estructurado bajo una arquitectura en capas desacopladas con núcleo único compartido, diseñada para que la interfaz por consola y la interfaz gráfica operen exactamente sobre las mismas reglas de negocio y el mismo estado en memoria sin duplicar código.
+
+## Instrucciones para compilar y ejecutar:
+clonar el repositorio en el equipo.
+
+Abrir Apache NetBeans y seleccionar File → Open Project... (Archivo → Abrir proyecto).
+
+Abrir la carpeta Source Packages -> biblioteca 
+
+Presionar clic derecho sobre el proyecto → Run para compilar y abrir la ventana principal Main.java
+    
+  usamos los patrones singleton y facade, singleton para evitar inconsistencias en el stock y facade para la coordinacion entre clases
