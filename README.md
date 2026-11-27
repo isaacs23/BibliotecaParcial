@@ -91,5 +91,3 @@ Abrir Apache NetBeans y seleccionar File → Open Project... (Archivo → Abrir 
 Abrir la carpeta Source Packages -> biblioteca 
 
 Presionar clic derecho sobre el proyecto → Run para compilar y abrir la ventana principal Main.java
-    
-  usamos los patrones singleton y facade, singleton para evitar inconsistencias en el stock y facade para la coordinacion entre clases
